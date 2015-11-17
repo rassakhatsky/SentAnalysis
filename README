@@ -1,0 +1,43 @@
+
+TWITTER SENTIMENT CLASSIFIER
+=============================
+
+This package implements an twitter sentiment classifier and server for the Bottle
+Python web framework.  You can get the Bottle (and learn more about it) at
+
+  http://bottlepy.org/
+
+SETUP
+=====
+
+ 1. Install the nltk library, version 3.0.0 or later with all packages.
+
+ 2. Install Bottle 0.12.8 or later.
+
+ 3. To run the server, run:
+
+    python hellobottle.py CLASSIFIER_FOLDER CLASSIFIER_NAME
+
+    where CLASSIFIER_FOLDER is folder that contains classifiers.
+          Folder name can't contain any spaces.
+
+          CLASSIFIER_NAME is a name of classifier:
+          "maxent" for Maxent algorithm,
+          "logreg" for Logistic Regression,
+          "svc" for LinearSVC,
+          "nv" for NaiveBayes.
+
+ 6. Point your web browser at the server at
+
+    http://localhost:8080/
+
+    to begin.
+
+
+
+CLASSIFIERS
+===========
+
+ 1. All classifiers were made by NLTK-Trainer – https://github.com/japerk/nltk-trainer
+
+ 2. All classifiers are based on the Twitter Sentiment Corpus data – http://www.sananalytics.com/lab/twitter-sentiment/
