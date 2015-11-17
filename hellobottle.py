@@ -168,7 +168,7 @@ def say_thanks():
 
 
 if len(sys.argv) == 2:
-    choice == 'maxent'
+    choice = 'maxent'
 else:
     choice = sys.argv[2].lower()
 
